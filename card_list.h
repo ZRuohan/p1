@@ -48,7 +48,7 @@ public:
         }
         Iterator() : curr(nullptr) {}
 
-        Card& operator*();
+        const Card& operator*();
         bool operator!=(const Iterator& other);
         bool operator==(const Iterator& other);
         Iterator& operator++();
