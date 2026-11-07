@@ -18,11 +18,11 @@ int toi(string a){
 Card::Card():suit("c"),val("a"){}
 Card::Card(string s, string v): suit(s), val(v){}
 
-string Card::gsuit(){
+string Card::gsuit() const{
   return suit;
 }
 
-string Card::gval(){
+string Card::gval() const{
   return val;
 }
 
@@ -48,7 +48,7 @@ bool Card::operator==(const Card&b) const{
   return suit == b.suit && val == b.val;
 }
 
-ostream& operator<<(ostream& os, Card& c) {
+ostream& operator<<(ostream& os, const Card& c) {
       os << c.gsuit() << " " << c.gval();
       return os;
 }
