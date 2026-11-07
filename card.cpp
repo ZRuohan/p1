@@ -15,7 +15,7 @@ int toi(string a){
     return stoi(a);
 }
 
-Card::Card():suit(c),val(a){}
+Card::Card():suit("c"),val("a"){}
 Card::Card(string s, string v): suit(s), val(v){}
 
 string Card::gsuit(){
