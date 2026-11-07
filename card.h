@@ -19,13 +19,13 @@ public:
   bool operator==(const Card& b) const;
   bool operator>(const Card& b) const;
 
-  string gsuit();
-  string gval();
+  string gsuit() const;
+  string gval() const;
 
 private:
   string suit;
   string val;
 };
 
-ostream& operator<<(ostream& os, Card& c);
+ostream& operator<<(ostream& os, const Card& c);
 #endif
