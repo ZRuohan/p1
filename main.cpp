@@ -17,8 +17,8 @@ int main(int argv, char** argc){
   ifstream cardFile1 (argc[1]);
   ifstream cardFile2 (argc[2]);
   string line;
-  CardBST Alice;
-  CardBST Bob;
+  CardBST alice;
+  CardBST bob;
 
   if (cardFile1.fail() || cardFile2.fail() ){
     cout << "Could not open file " << argc[2];
@@ -41,6 +41,6 @@ int main(int argv, char** argc){
   }
   cardFile2.close();
 
-  playGame(alice,bob)
+  playGame(alice,bob);
   return 0;
 }
