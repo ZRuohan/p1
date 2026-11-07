@@ -138,7 +138,7 @@ void CardBST::remove(Card c) {
 }
 
 
-Card& CardBST::Iterator::operator*() {
+const Card& CardBST::Iterator::operator*() {
     return curr->data;
 }
 
