@@ -46,6 +46,7 @@ public:
         Iterator(Node* n) {
             curr = n;
         }
+        Iterator() : curr(nullptr) {}
 
         Card& operator*();
         bool operator!=(const Iterator& other);
